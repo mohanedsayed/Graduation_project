@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">22888000865-gmmvtn0otk8vt141ofv6rsbhk784dq6d.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">22888000865</string>
+    <string name="google_api_key" translatable="false">AIzaSyD7pYWFLIRq3YVWgcx2dX4tmJNVbiK8W7Y</string>
+    <string name="google_app_id" translatable="false">1:22888000865:android:f97b0ea2758429c3576920</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD7pYWFLIRq3YVWgcx2dX4tmJNVbiK8W7Y</string>
+    <string name="google_storage_bucket" translatable="false">grad-project-cb910.appspot.com</string>
+    <string name="project_id" translatable="false">grad-project-cb910</string>
+</resources>
