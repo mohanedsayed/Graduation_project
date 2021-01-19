@@ -1,9 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:graduatio_project103/Screens/signIn.dart';
+import 'package:graduatio_project103/Screens/signUp.dart';
 import 'package:graduatio_project103/Services/authentication.dart';
 import 'package:provider/provider.dart';
-
+import 'Screens/signUp.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,17 +29,14 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'EduCergie',
-        theme: ThemeData.dark(),
-        home: AuthenticationWrapper(),
+        theme: ThemeData.light(),
+        initialRoute: 'sign in',
+        routes: {
+          'sign in': (context) => SignIn(),
+          'sign up': (context) => SignUp(),
+        },
+        home: SignUp(),
       ),
     );
   }
-}
-
-class AuthenticationWrapper extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    final firebaseUser = context.watch();
-
-   return 
 }
