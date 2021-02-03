@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "22888000865",
-    "project_id": "grad-project-cb910",
-    "storage_bucket": "grad-project-cb910.appspot.com"
+    "project_number": "70070899408",
+    "project_id": "roles-82637",
+    "storage_bucket": "roles-82637.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:22888000865:android:f97b0ea2758429c3576920",
+        "mobilesdk_app_id": "1:70070899408:android:4f2796ae7a23268a0a04d5",
         "android_client_info": {
-          "package_name": "com.me.graduation_project"
+          "package_name": "com.example.rolebasedmodelplswork"
         }
       },
       "oauth_client": [
         {
-          "client_id": "22888000865-gmmvtn0otk8vt141ofv6rsbhk784dq6d.apps.googleusercontent.com",
+          "client_id": "70070899408-f8q8ec8j8hrch03ufqfsqs8davqv86cu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD7pYWFLIRq3YVWgcx2dX4tmJNVbiK8W7Y"
+          "current_key": "AIzaSyDD5YUBRtVheV6raG8d1HJ1vK80bZH-Jac"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "22888000865-gmmvtn0otk8vt141ofv6rsbhk784dq6d.apps.googleusercontent.com",
+              "client_id": "70070899408-f8q8ec8j8hrch03ufqfsqs8davqv86cu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

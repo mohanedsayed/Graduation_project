@@ -1,5 +1,7 @@
 import 'package:dropdownfield/dropdownfield.dart';
 import 'package:flutter/material.dart';
+import 'package:graduatio_project103/Screens/admin_page.dart';
+import 'package:graduatio_project103/Screens/users_page.dart';
 import 'package:graduatio_project103/Services/authentication.dart';
 import 'package:provider/provider.dart';
 
@@ -16,6 +18,8 @@ class _SignUpState extends State<SignUp> {
   String email = '';
 
   String password = '';
+
+  String role = '';
 
   @override
   Widget build(BuildContext context) {
@@ -101,17 +105,17 @@ class _SignUpState extends State<SignUp> {
                 ),
                 TextFormField(
                   decoration: InputDecoration(
-                    labelText: 'Age',
+                    labelText: 'role',
                     border: OutlineInputBorder(),
                   ),
                   validator: (value) {
                     if (value.isEmpty) {
-                      return 'Enter Age please';
+                      return 'Enter role please';
                     } else {
                       return null;
                     }
                   },
-                  //onSaved: (value) => userName = value,
+                  onSaved: (value) => role = value,
                 ),
                 SizedBox(
                   height: 16,
@@ -151,7 +155,22 @@ class _SignUpState extends State<SignUp> {
                     }
                     (context)
                         .read<AuthenticationService>()
-                        .signUp(email: email, password: password);
+                        .signUp(email: email, password: password, role: role);
+                    if (role == 'admin') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AdminPage(),
+                        ),
+                      );
+                    } else if (role == 'user') {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => UsersPage(),
+                        ),
+                      );
+                    }
                   },
                   child: Text('Sign Up'),
                 ),
